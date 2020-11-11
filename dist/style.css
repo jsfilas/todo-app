@@ -1,0 +1,137 @@
+body {
+    background-color: #3f3e3e;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#container {
+    -moz-box-shadow: 0 0 100px rgb(26, 26, 26);
+    -webkit-box-shadow: 0 0 100px rgb(26, 26, 26);
+    box-shadow: 0 0 100px rgb(26, 26, 26);
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 1100px;
+    height: 750px;
+    background-color: white;
+}
+
+#title {
+    height: 100px;
+    width: 350px;
+    background-color: #204051;
+}
+
+#titleWord {
+    padding-top: 25px;
+    font-size: 50px;
+    text-align: center;
+    color:white;
+}
+
+#projects {
+    height: 650px;
+    width: 350px;
+    background-color: #3b6978;
+    overflow: auto;
+}
+
+#projectHeader {
+    height: 50px;
+    width: 350px;
+    background-color: #e4e3e3;
+    font-size: 15px;
+    display: flex;
+}
+
+#projectHeader h1 {
+    margin: auto;
+    margin-left: 85px;
+    color: #204051;
+    
+}
+
+#newProject {
+    color: #e4e3e3;
+    background-color: #3b6978;
+    padding: 7px 14px;
+    border-radius: 25%;
+    font-size: 25px;
+    margin: auto;
+    margin-right: 2px;
+    margin-left: 35px;
+    
+}
+
+.projectFormatter {
+    background-color: #3b6978;
+    color: #e4e3e3;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 5px solid #84a9ac;
+    
+}
+
+
+
+#todos {
+    margin-left: 350px;
+    margin-top: -750px;
+    height: 750px;
+    width: 350px;
+    background-color: #84a9ac;
+    overflow: auto;
+}
+
+#todoHeader {
+    height: 50px;
+    width: 350px;
+    background-color: #e4e3e3;
+    font-size: 15px;
+    display: flex;
+    
+}
+
+#todoHeader h1 {
+    margin: auto;
+    margin-left: 85px;
+    color: #3b6978;
+    
+}
+
+#newTodo {
+    color: #e4e3e3;
+    background-color: #84a9ac;
+    padding: 7px 14px;
+    border-radius: 25%;
+    font-size: 25px;
+    margin: auto;
+    margin-right: 2px;
+    margin-left: 35px;
+    
+}
+
+.todoFormatter {
+    background-color: #84a9ac;
+    color: #204051;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 5px solid #3b6978;
+    
+}
+
+
+#todoView {
+    margin-left: 700px;
+    margin-top: -770px;
+    height: 750px;
+    width: 400px;
+    background-color: #e4e3e3;
+    
+}
+
+.todoViewFormatter {
+    margin-left: 10px;
+    
+}

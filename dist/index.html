@@ -6,7 +6,34 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="content"></div>
+    <div id="container">
+      <div id="title"><h1 id="titleWord">Todo App</h1></div>
+      <div id="projects">
+        <div id="projectHeader">
+            <h1>PROJECTS</h1>
+            <button id="newProject">+</button>
+        </div>
+        <div class="projectFormatter">Groceries</div>
+        <div class="projectFormatter">Chores</div>
+      </div>
+      <div id="todos">
+        <div id="todoHeader">
+          <h1>TODOS</h1>
+          <button id="newTodo">+</button>
+        </div>
+        <div class="todoFormatter">Costco</div>
+        <div class="todoFormatter">Trader Joe's</div>
+      </div>
+      <div id="todoView">
+        <div class="todoViewFormatter">
+            <h2>Description:</h2>
+              <h3>Going to Costco on Sunday.</h3>
+            <h2>Priority level:</h2>
+              <h3>High</h3>
+            <textarea>Dog food, steaks, chicken, tilapia, veggies, milk, eggs, diapers</textarea>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
