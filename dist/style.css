@@ -62,14 +62,51 @@ body {
     
 }
 
+#PI {
+    display: flex;
+}
+
+#projectInput {
+    width: 250px;
+    height: 44px;
+    background-color: #e4e3e3;
+    color: #204051;
+    text-align: center;
+    font-size: large;
+}
+
+#projectSubmit {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+}
+
+#projectCancel {
+    width: 50px;
+    height: 50px;
+    font-size: x-large;
+    background-color: rgb(209, 58, 20);
+    color: white;
+}
+
 .projectFormatter {
     background-color: #3b6978;
     color: #e4e3e3;
     padding: 25px;
-    font-size: 25px;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
     border-bottom: 5px solid #84a9ac;
     
+}
+
+.deleteProjectButton {
+    font-size: medium;
+    background-color: rgb(209, 58, 20);
+    color: white;
+    float: right;
+    border-radius: 10px;
+    height: 40px;
 }
 
 
@@ -134,4 +171,9 @@ body {
 .todoViewFormatter {
     margin-left: 10px;
     
+}
+
+
+.hidden {
+    display: none !important;
 }
