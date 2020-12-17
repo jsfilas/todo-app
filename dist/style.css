@@ -4,20 +4,22 @@ body {
 }
 
 #container {
-    -moz-box-shadow: 0 0 100px rgb(26, 26, 26);
-    -webkit-box-shadow: 0 0 100px rgb(26, 26, 26);
-    box-shadow: 0 0 100px rgb(26, 26, 26);
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 1100px;
-    height: 750px;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
     background-color: white;
+    display: block;
 }
 
 #title {
     height: 100px;
-    width: 350px;
+    width: 100%;
+    margin-top: -40px;
+    
     background-color: #204051;
 }
 
@@ -29,10 +31,11 @@ body {
 }
 
 #projects {
-    height: 650px;
+    height: 100%;
     width: 350px;
     background-color: #3b6978;
     overflow: auto;
+    float: left;
 }
 
 #projectHeader {
@@ -62,11 +65,17 @@ body {
     
 }
 
-#PI {
+#PI, #TI {
     display: flex;
 }
 
-#projectInput {
+#TI {
+    background-color: gray;
+    height: 75px;
+    
+}
+
+#projectInput, #todoInput {
     width: 250px;
     height: 44px;
     background-color: #e4e3e3;
@@ -75,14 +84,14 @@ body {
     font-size: large;
 }
 
-#projectSubmit {
+#projectSubmit, #todoSubmit {
     width: 50px;
     height: 50px;
     color: white;
     background-color: green;
 }
 
-#projectCancel {
+#projectCancel, #todoCancel {
     width: 50px;
     height: 50px;
     font-size: x-large;
@@ -91,38 +100,62 @@ body {
 }
 
 .projectFormatter {
-    background-color: #3b6978;
+    height: 70%;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #84a9ac;
     color: #e4e3e3;
     padding: 25px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: left;
-    border-bottom: 5px solid #84a9ac;
+    border-bottom: 5px solid #3b6978;
+    border-top: 5px solid #3b6978;
     
 }
 
-.deleteProjectButton {
+.deleteProjectButton, .deleteTodoButton {
     font-size: medium;
     background-color: rgb(209, 58, 20);
     color: white;
     float: right;
     border-radius: 10px;
     height: 40px;
+    
 }
 
+.deleteProjectButton {
+    margin-top: -10px;
+}
 
+.deleteTodoButton {
+    margin-top: -3px;
+}
+
+#todoSubmit {
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+#todoCancel {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#todoInput {
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 #todos {
-    margin-left: 350px;
-    margin-top: -750px;
-    height: 750px;
-    width: 350px;
+    height: 100%;
     background-color: #84a9ac;
     overflow: auto;
 }
 
 #todoHeader {
     height: 50px;
-    width: 350px;
+    width: 100%;
     background-color: #e4e3e3;
     font-size: 15px;
     display: flex;
@@ -131,7 +164,7 @@ body {
 
 #todoHeader h1 {
     margin: auto;
-    margin-left: 85px;
+    
     color: #3b6978;
     
 }
@@ -149,8 +182,12 @@ body {
 }
 
 .todoFormatter {
-    background-color: #84a9ac;
-    color: #204051;
+    height: 70%;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #3b6978;
+    color: #e4e3e3;
     padding: 25px;
     font-size: 25px;
     text-align: center;
@@ -159,14 +196,14 @@ body {
 }
 
 
-#todoView {
+/*#todoView {
     margin-left: 700px;
-    margin-top: -770px;
-    height: 750px;
+    margin-top: -650px;
+    height: 650px;
     width: 400px;
     background-color: #e4e3e3;
     
-}
+} */
 
 .todoViewFormatter {
     margin-left: 10px;
@@ -176,4 +213,95 @@ body {
 
 .hidden {
     display: none !important;
+}
+
+
+
+label {
+    font-size: 22px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#descriptionInput,
+#notesInput {
+    width: 50%;
+    height: 60px;
+    margin-top: 4px;
+    
+}
+
+#priorityLevel {
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+#notes {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#date {
+    margin-left: 50px;
+    margin-top: 7px;
+}
+
+.todoDate {
+    height: 63px;
+    margin-top: 5px;
+    width: 225px;
+}
+
+#save {
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 160px;
+    margin-top: 115px;
+}
+
+#todoDetails {
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    background-color:#3b6978;
+
+    
+}
+
+.highlighted {
+    background-color: white;
+    color:#3b6978;
+}
+
+.detail1 {
+    height: 20%;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #204051;
+    color: #e4e3e3;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.detail2 {
+    height: 5em;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #204051;
+    color: #e4e3e3;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 10px;
+
 }

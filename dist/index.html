@@ -7,7 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
-    <div id="container">
+    
+  <div id="container">
       <div id="title"><h1 id="titleWord">Todo App</h1></div>
       <div id="projects">
         <div id="projectHeader">
@@ -29,16 +30,24 @@
           <h1>TODOS</h1>
           <button id="newTodo">+</button>
         </div>
-        <div class="todoFormatter">Costco</div>
-        <div class="todoFormatter">Trader Joe's</div>
-      </div>
-      <div id="todoView">
-        <div class="todoViewFormatter">
-            <h2>Description:</h2>
-              <h3>Going to Costco on Sunday.</h3>
-            <h2>Priority level:</h2>
-              <h3>High</h3>
-            <textarea>Dog food, steaks, chicken, tilapia, veggies, milk, eggs, diapers</textarea>
+        <div id="TI" class="hidden">
+          <input id="todoInput" placeholder="Enter Todo Name"> <br></br>
+          <label for="priorityLevel"><b>Priority Level: </b></label>
+              <select id="priorityLevel">
+                <option value="low">Low</option>
+                <option value="normal">Normal</option>
+                <option value="high">High</option>
+              </select>
+          <h2 id="notes">Notes:</h2>
+          <textarea id='notesInput' placeholder="Add ToDo notes..."></textarea>
+          <h2 id="date">Due Date:</h2>
+          <input class="todoDate" type="date">
+          <button id="todoSubmit">ADD</button>
+          <button id="todoCancel">&#8709</button>
+        </div>
+        <div id="todoContainer">
+          <div class="todoFormatter">Costco</div>
+          <div class="todoFormatter">Trader Joe's</div>
         </div>
       </div>
     </div>
