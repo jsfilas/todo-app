@@ -1,6 +1,6 @@
 body {
-    background-color: #3f3e3e;
-    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #edf2f4;
+    font-family: "Roboto", sans-serif;
 }
 
 #container {
@@ -11,7 +11,7 @@ body {
     margin:0;
     top:0;
     left:0;
-    background-color: white;
+    background-color: #edf2f4;
     display: block;
 }
 
@@ -19,29 +19,29 @@ body {
     height: 100px;
     width: 100%;
     margin-top: -40px;
-    
-    background-color: #204051;
+    border-bottom: 4px solid #d90429;
+    background-color: #2b2d42;
 }
 
 #titleWord {
     padding-top: 25px;
     font-size: 50px;
     text-align: center;
-    color:white;
+    color: #edf2f4;
 }
 
 #projects {
-    height: 100%;
+    height: calc(100vh - 120px);
     width: 350px;
-    background-color: #3b6978;
     overflow: auto;
+    margin: 10px 30px 10px 10px;
     float: left;
 }
 
 #projectHeader {
-    height: 50px;
+    height: 75px;
     width: 350px;
-    background-color: #e4e3e3;
+    background-color: #edf2f4;
     font-size: 15px;
     display: flex;
 }
@@ -53,16 +53,16 @@ body {
     
 }
 
+
+
 #newProject {
-    color: #e4e3e3;
-    background-color: #3b6978;
+    color: #2b2d42;
+    background-color: #d90429;
     padding: 7px 14px;
     border-radius: 25%;
     font-size: 25px;
     margin: auto;
     margin-right: 2px;
-    margin-left: 35px;
-    
 }
 
 #PI, #TI {
@@ -70,15 +70,17 @@ body {
 }
 
 #TI {
-    background-color: gray;
+    background-color: #edf2f4;
     height: 75px;
     
 }
 
-#projectInput, #todoInput {
+#projectInput {
     width: 250px;
     height: 44px;
-    background-color: #e4e3e3;
+    background-color: #edf2f4;
+    border: none;
+    border-bottom: 2px solid #d90429;
     color: #204051;
     text-align: center;
     font-size: large;
@@ -87,6 +89,7 @@ body {
 #projectSubmit, #todoSubmit {
     width: 50px;
     height: 50px;
+    border-radius: 50px;
     color: white;
     background-color: green;
 }
@@ -94,6 +97,7 @@ body {
 #projectCancel, #todoCancel {
     width: 50px;
     height: 50px;
+    border-radius: 50px;
     font-size: x-large;
     background-color: rgb(209, 58, 20);
     color: white;
@@ -104,13 +108,14 @@ body {
     width: 75%;
     margin: auto;
     margin-top: 10px;
-    background-color: #84a9ac;
-    color: #e4e3e3;
+    background-color: #8d99ae;
+    border-radius: 20px;
+    color: #edf2f4;
     padding: 25px;
     font-size: 20px;
     text-align: left;
-    border-bottom: 5px solid #3b6978;
-    border-top: 5px solid #3b6978;
+    border: 3px solid #2b2d42;
+    
     
 }
 
@@ -148,16 +153,19 @@ body {
 }
 
 #todos {
-    height: 100%;
-    background-color: #84a9ac;
+    height: calc(100vh - 140px);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(43, 45, 66, 0.5);
+    margin: 10px 25px 20px 10px;
     overflow: auto;
 }
 
 #todoHeader {
-    height: 50px;
+    height: 75px;
     width: 100%;
-    background-color: #e4e3e3;
     font-size: 15px;
+    background: #8d99ae;
+    border-bottom: 3px solid #d90429;
     display: flex;
     
 }
@@ -165,18 +173,18 @@ body {
 #todoHeader h1 {
     margin: auto;
     
-    color: #3b6978;
+    color: #2b2d42;
     
 }
 
 #newTodo {
-    color: #e4e3e3;
-    background-color: #84a9ac;
+    color: #2b2d42;
+    background-color: #d90429;
     padding: 7px 14px;
     border-radius: 25%;
     font-size: 25px;
     margin: auto;
-    margin-right: 2px;
+    margin-right: 10px;
     margin-left: 35px;
     
 }
@@ -194,16 +202,6 @@ body {
     border-bottom: 5px solid #3b6978;
     
 }
-
-
-/*#todoView {
-    margin-left: 700px;
-    margin-top: -650px;
-    height: 650px;
-    width: 400px;
-    background-color: #e4e3e3;
-    
-} */
 
 .todoViewFormatter {
     margin-left: 10px;
@@ -275,8 +273,8 @@ label {
 }
 
 .highlighted {
-    background-color: white;
-    color:#3b6978;
+    background-color: #d90429;
+    color:#edf2f4;
 }
 
 .detail1 {
