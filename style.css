@@ -89,7 +89,7 @@ body {
     font-size: large;
 }
 
-#projectSubmit, #todoSubmit {
+#projectSubmit, #taskSubmit {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -97,7 +97,7 @@ body {
     background-color: green;
 }
 
-#projectCancel, #todoCancel {
+#projectCancel, #taskCancel {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -122,7 +122,7 @@ body {
     
 }
 
-.deleteProjectButton, .deleteTodoButton {
+.deleteProjectButton, .deleteTaskButton {
     font-size: small;
     background-color: #d90429;
     color: #edf2f4;
@@ -139,26 +139,34 @@ body {
     margin-top: -10px;
 }
 
-.deleteTodoButton {
+.deleteTaskButton {
     margin-top: -3px;
+    align-self: flex-end;
 }
 
-#todoSubmit {
+#taskSubmit {
     margin-left: 75px;
     margin-top: 10px;
 }
 
-#todoCancel {
+#taskCancel {
     margin-top: 10px;
+    margin-left: 5px;
     margin-right: 20px;
 }
 
-#todoInput {
-    margin-top: 10px;
-    margin-left: 10px;
+#taskInput {
+    margin-left: 20px;
+    background-color: #edf2f4;
+    border: none;
+    border-bottom: 2px solid #d90429;
+    color: #204051;
+    text-align: center;
+    font-size: large;
+    flex: 3;
 }
 
-#todos {
+#task {
     height: calc(100vh - 140px);
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgba(43, 45, 66, 0.5);
@@ -166,7 +174,7 @@ body {
     overflow: auto;
 }
 
-#todoHeader {
+#taskHeader {
     height: 75px;
     width: 100%;
     font-size: 15px;
@@ -176,14 +184,14 @@ body {
     
 }
 
-#todoHeader h1 {
+#taskHeader h1 {
     margin: auto;
     
     color: #2b2d42;
     
 }
 
-#newTodo {
+#newTask {
     color: #2b2d42;
     background-color: #d90429;
     padding: 7px 14px;
@@ -196,22 +204,23 @@ body {
     
 }
 
-.todoFormatter {
+.taskFormatter {
+    display: flex;
+    flex-direction: row;
     height: 70%;
     width: 90%;
     margin: auto;
     margin-top: 10px;
     background-color: #edf2f4;
     border-radius: 25px;
-    box-shadow: 0px 10px 20px rgba(43, 45, 66, 1);
+    box-shadow: 0px 10px 25px rgba(43, 45, 66, 1);
     color: #2b2b2b;
     padding: 25px;
     font-size: 25px;
-    /*text-align: center;*/
     
 }
 
-.todoViewFormatter {
+.taskViewFormatter {
     margin-left: 10px;
     
 }
@@ -226,7 +235,10 @@ body {
 label {
     font-size: 22px;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 25px;
+    flex: 1;
+    color: #2b2d42;
+    
 }
 
 #descriptionInput,
@@ -239,26 +251,37 @@ label {
 
 #priorityLevel {
     width: 100px;
-    height: 65px;
     text-align: center;
     margin-top: 5px;
+    background-color: #edf2f4;
+    border: none;
+    border-bottom: 2px solid #d90429;
+    color: #204051;
+    text-align: center;
+    font-size: large;
 
 }
 
-#notes {
-    margin-left: 50px;
-    margin-right: 10px;
-}
 
 #date {
+    font-size: 22px;
     margin-left: 50px;
-    margin-top: 7px;
+    margin-top: 25px;
+    flex: 1;
+    color: #2b2d42;
 }
 
-.todoDate {
-    height: 63px;
+.taskDate {
     margin-top: 5px;
+    margin-left: -50px;
     width: 225px;
+    flex: 1;
+    background-color: #edf2f4;
+    border: none;
+    border-bottom: 2px solid #d90429;
+    color: #204051;
+    text-align: center;
+    font-size: large;
 }
 
 #save {
@@ -271,7 +294,7 @@ label {
     margin-top: 115px;
 }
 
-#todoDetails {
+#taskDetails {
     height: 400px;
     width: 100%;
     margin-top: 50px;
@@ -280,33 +303,34 @@ label {
     
 }
 
+
 .highlighted {
     background-color: #d90429;
     color:#edf2f4;
 }
 
-.detail1 {
-    height: 20%;
-    width: 90%;
-    margin: auto;
+/*.detail1 {
+    flex: 2;
     margin-top: 15px;
     color: #2b2d42;
     padding: 10px;
     font-size: 18px;
-    /*text-align: left;*/
+   
+    
+} */
+
+.detail2 {
+    width: 700px;
+    margin-left: 100px;
     
 }
 
-.detail2 {
-    height: 5em;
-    width: 90%;
-    margin: auto;
-    margin-top: 15px;
-    color: #2b2d42;
-    border: 3px solid #8d99ae;
-    padding: 10px;
-    font-size: 18px;
-    text-align: left;
-    border-radius: 10px;
+.detail1 {
+    margin-right: 100px;
+}
 
+.taskDesign {
+    display: flex;
+    flex-direction: row;
+    
 }
