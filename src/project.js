@@ -1,11 +1,11 @@
-
+import {renderTasks} from './task';
 
 const projectsContainer = document.querySelector("#projectsContainer");
 
 class Project {
     constructor(name) {
         this.name = name;
-        this.todos = [];
+        this.tasks = [];
         
     }
 
@@ -56,11 +56,19 @@ class Project {
             currentProject = ''
         }
         highlightedProject = this;
+        let highlightedHTML = highlightedProject.textContent;
+        console.log(highlightedProject);
         $(this).css("background-color", "#2b2d42");
         $(this).css("color", "#edf2f4");
         $(this).css("border", "3px solid #d90429");
-
-
+        
+        for(var i =0; i < myProjects.length; i++) {
+            if (highlightedHTML.includes(myProjects[i].name)) {
+                currentProject = myProjects[i];
+                console.log(currentProject);
+                renderTasks();
+            }
+        }
     }
     
 }
