@@ -233,7 +233,7 @@ body {
 
 
 label {
-    font-size: 22px;
+    font-size: 15px;
     margin-left: 50px;
     margin-top: 25px;
     flex: 1;
@@ -264,7 +264,7 @@ label {
 
 
 #date {
-    font-size: 22px;
+    font-size: 15px;
     margin-left: 50px;
     margin-top: 25px;
     flex: 1;
