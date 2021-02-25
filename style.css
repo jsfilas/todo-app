@@ -334,3 +334,40 @@ label {
     flex-direction: row;
     
 }
+
+@media screen and (max-width: 1440px) and (max-width: 1550px) {
+    #taskInput {
+        margin-left: 1vw;
+        flex: 2;
+
+    }
+
+    label {
+        margin-left: 1vw;
+        width: 10%;
+        
+    }
+
+    #priorityLevel {
+        margin-left: -4vw;
+    }
+
+    .taskDate {
+        margin-left: -6vw;
+    }
+     #taskSubmit {
+         margin-left: 1.5vw;
+         width: 40px;
+         height: 40px;
+         font-size: x-small;
+         margin-top: 2.5vh;
+     }
+
+     #taskCancel {
+        width: 40px;
+        height: 40px;
+        font-size: medium;
+        margin-top: 2.5vh;
+     }
+
+}
